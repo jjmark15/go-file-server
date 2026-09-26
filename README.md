@@ -11,32 +11,6 @@ Designed as a faster, more robust alternative to `python -m http.server`.
 - **logging**: simple request logging similar to python's format.
 - **concurrent**: handles multiple connections efficiently via go routines.
 
-## Installation
-
-### From source
-
-you need go installed (1.20+ recommended).
-
-
-### Build the binary
-
-``` bash
-make build
-```
-
-
-### install to /usr/local/bin (requires sudo)
-
-``` bash
-make install
-```
-
-or just build manually:
-
-``` bash
-go build -o goserver main.go
-```
-
 ## Usage
 
 Run the server in the current directory on port 8000 by default:
