@@ -16,7 +16,7 @@ Designed as a faster, more robust alternative to `python -m http.server`.
 Run the server in the current directory on port 8000 by default:
 
 ``` bash
-goserver
+go-file-server
 ```
 
 ### Options
@@ -38,19 +38,19 @@ Plaintext
 Serve a specific directory on a custom port:
 
 ``` bash
-goserver -p 9090 -d /var/www/html
+go-file-server -p 9090 -d /var/www/html
 ```
 
 Serve strictly on localhost (not accessible from network):
 
 ``` bash
-goserver -h 127.0.0.1
+go-file-server -h 127.0.0.1
 ```
 
 Enable https mode (useful for testing secure contexts locally):
 
 ``` bash
-goserver -tls -p 443
+go-file-server -tls -p 443
 ```
 
 NOTE: since the certificate is self-signed and generated in-memory, your browser will warn you. This is expected.

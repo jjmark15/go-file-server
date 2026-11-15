@@ -1,4 +1,4 @@
-name: goreleaser
+name: Release go-file-server
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v7
         with:
-          go-version: stable
+          go-version-file: go.mod
       # More assembly might be required: Docker logins, GPG, etc.
       # It all depends on your needs.
       - name: Run GoReleaser
